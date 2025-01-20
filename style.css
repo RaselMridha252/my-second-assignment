@@ -48,6 +48,7 @@
    text-align: center;
    align-items: center;
    padding: 20px 0 20px 0;
+   
 }
 
 .nav-bar-title{
@@ -85,5 +86,73 @@
     padding: 10px 60.5px 10px 60.5px;
     border-radius: 12px;
     border: 0;
+}
+
+@media screen and (max-width: 576px){
+    .btn-primary, .title{
+        display: none;
+    }
+
+    .nav-items{
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+        
+    
+
+    .mobile-btn{
+        /* display: block;
+        position: absolute;
+     */
+    }
+    
+}
+
+/* banner section styles */
+
+.banner{
+    max-width: 1160px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.banner-content{
+    margin-right: 50px;
+}
+
+.banner-heading{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.banner-para{
+    
+    font-size: 1.25rem;
+}
+
+.banner-btn{
+    background-color: black;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 10px 47px;
+    border-radius: 12px;
+    border: 0;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 576px){
+    .banner{
+        flex-direction: column-reverse;
+    } 
+    .banner-content{
+        text-align: center;
+        margin: 30px;
+    }
+    
 }
     
