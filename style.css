@@ -102,25 +102,31 @@
 }
 
 @media screen and (max-width: 576px){
-    .btn-primary, .title, .nav-items{
+    .btn-primary, .nav-items{
+        visibility: hidden;
+    }
+
+    .title{
         display: none;
     }
 
 
     .nav-bar-title{
-        max-width: 576px;
-        /* gap: 450px; */
+        border-bottom: 1px solid orange;
         padding-bottom: 10px;
+        justify-content: space-between;
+        
         
     }
 
     .nav-bar{
-        border-bottom: 1px solid orange;
+        display: block; 
+        margin: 0;   
     }
 
     .manu-50{
        visibility: visible; 
-       margin-left: 450px;
+       
     }
     
 }
@@ -161,7 +167,7 @@
 @media screen and (max-width: 576px){
     .banner{
         flex-direction: column-reverse;
-        padding: 20px 0 20px 0;
+        
     } 
     .banner-content{
         text-align: center;
@@ -174,6 +180,10 @@
 
 main{
     background-image: url(/styles/assets/bg.png);
+   /* classes section styles */
+}
+
+.classes{
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -275,3 +285,138 @@ main{
     }
     
 }
+
+/* Our Stories */
+
+.stories{
+background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
+
+}
+
+.stories-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-top: 80px;
+    gap: 18px;
+      
+}
+
+.tow-dimension-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+   
+}
+
+.card-heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 58px 38px 0 38px;
+}
+
+.stories-para{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666666;
+    padding: 47px 68px 34px 38px;
+}
+
+.heading-four{
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 43px 54px 33px 37px;
+}
+
+
+.card-one{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    width: 540px;
+    height: 675px;
+    
+}
+
+.story-one-img{
+    border-radius: 16px 16px 0 0;
+}
+
+.card{
+    background-color: #FFFFFF;
+    border-radius: 16px; 
+    
+}
+
+.foru-img{
+    border-radius: 16px 16px 0 0; 
+}
+
+.btn{
+    color: #FFFFFF;
+    background-color: #3CD8E8;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 14px 19px 15px 19px;
+    border-radius: 48px;
+    border: 0;
+    margin-top: -314px;
+    margin-left: 38px;
+
+}
+
+.three-btn{
+    color: #FFFFFF;
+    background-color: #95B226;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 14px 19px 15px 19px;
+    border-radius: 48px;
+    border: 0;
+    margin-top: -314px;
+    margin-left: 38px;
+}
+
+.single-btn{
+    color: #FFFFFF;
+    background-color: #5D58F0;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 14px 19px 15px 19px;
+    border-radius: 48px;
+    border: 0;
+    margin-top: -314px;
+    margin-left: 38px; 
+}
+
+.view-all{
+   
+    text-align: center;
+    padding: 90px 0 70px 0;
+}
+
+.view-all-btn{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 10px 61px;
+    border-radius: 12px;
+    border: 0;
+}
+
+@media screen and (max-width: 576px){
+    .card-one, .story-one-img{
+        display: none;
+    }
+
+    .tow-dimension-card{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        
+        
+    }
+    
+}
+
