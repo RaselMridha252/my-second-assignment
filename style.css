@@ -223,7 +223,8 @@ main{
     color: #64C8FF;
     font-weight: 700;
     font-size: 1rem;
-    margin-top: 38px;
+    margin-top: 33px;
+    margin-bottom: 53px;
     border: 0;
     background-color: white;
 }
@@ -232,7 +233,8 @@ main{
     color: #F0AA00;
     font-weight: 700;
     font-size: 1rem;
-    margin-top: 38px;
+    margin-top: 33px;
+    margin-bottom: 53px;
     border: 0;
     background-color: white;
 }
@@ -241,7 +243,8 @@ main{
     color: #8700FF;
     font-weight: 700;
     font-size: 1rem;
-    margin-top: 38px;
+    margin-top: 33px;
+    margin-bottom: 53px;
     border: 0;
     background-color: white;
     
@@ -286,7 +289,7 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
 
 .stories-container{
     display:flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     max-width: 1160px;
     margin: 0 auto;
@@ -325,8 +328,8 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
 .card-one{
     background-color: #FFFFFF;
     border-radius: 16px;
-    /* width: 540px;
-    height: 675px; */
+    width: 540px;
+    height: 675px;
     
 }
 
@@ -340,7 +343,7 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
     
 }
 
-.foru-img{
+.four-img{
     border-radius: 16px 16px 0 0; 
 }
 
@@ -398,15 +401,20 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
 }
 
 @media screen and (max-width: 576px){
-    .card-one, .story-one-img{
+    .one-wey-card{
         display: none;
     }
 
-    .tow-dimension-card,{
-       /* grid-template-columns: repeat(2, 1fr); */
+    .tow-dimension-card{
+        /* display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       justify-content: space-between; */
+       margin: 16px;
+       gap: 11px;
         }
 
-    .foru-img{
+
+    .four-img{
         width: 100%;
     }
     
