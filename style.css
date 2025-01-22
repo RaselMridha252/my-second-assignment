@@ -295,7 +295,7 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
 
 .stories-container{
     display:flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     max-width: 1160px;
     margin: 0 auto;
@@ -411,11 +411,80 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
         display: none;
     }
 
-    .tow-dimension-card{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        
-        
+    .tow-dimension-card,{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+           
+    }
+
+    .foru-img{
+        width: 100%;
+    }
+    
+}
+
+
+/* footer section style */
+
+footer{
+    background-color: #01ACFD;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 88px 228px 209px 140px;
+}
+
+.fast-card{
+    margin-right: 172px;
+}
+
+.education-logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.kids-education{
+    color: white;
+    font-weight: 700;
+    font-size: 2.55rem;
+}
+
+.kids-education-para{
+    color: white;
+    font-size: 1.25rem;
+    
+}
+
+.about-school{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 15px;
+
+}
+
+.para-four{
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 15px;
+}
+
+.Keep{
+    color: white;
+    font-weight: 700;
+    font-size: 1.60rem;
+    margin-top: 10px;
+    padding-bottom: 32px;
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
     }
     
 }
