@@ -63,9 +63,8 @@
 .nav-bar-title{
     align-items: center;
 }
-
 .manu-50{
-    visibility: hidden;
+    display: none;
 }
 
 .title{
@@ -102,33 +101,21 @@
 }
 
 @media screen and (max-width: 576px){
-    .btn-primary, .nav-items{
-        visibility: hidden;
+   
+        .nav-bar{
+        display: none;   
     }
 
-    .title{
-        display: none;
-    }
-
-
-    .nav-bar-title{
-        border-bottom: 1px solid orange;
-        padding-bottom: 10px;
-        justify-content: space-between;
-        
-        
-    }
-
-    .nav-bar{
-        display: block; 
-        margin: 0;   
+    .Nav-tow{
+        display: flex;
+       justify-content: space-between;
+       padding: 12px 16px;
+       border-bottom: 2px solid #FEA301;
     }
 
     .manu-50{
-       visibility: visible; 
-       
-    }
-    
+        display: inline;
+        }
 }
 
 /* banner section styles */
@@ -172,6 +159,10 @@
     .banner-content{
         text-align: center;
         margin: 30px;
+    }
+
+    .hero-kids{
+        padding: 20px;
     }
     
 }
@@ -412,9 +403,8 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
     }
 
     .tow-dimension-card,{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-           
-    }
+       /* grid-template-columns: repeat(2, 1fr); */
+        }
 
     .foru-img{
         width: 100%;
@@ -427,6 +417,14 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
 
 footer{
     background-color: #01ACFD;
+}
+
+.marq{
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    background-color: #5D58F0;
+    padding: 16px;
 }
 
 .footer-container{
