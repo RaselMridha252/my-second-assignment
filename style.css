@@ -334,8 +334,8 @@ background-image: linear-gradient(#FFFFFF, rgba(254, 161, 1, 0.274));
 .card-one{
     background-color: #FFFFFF;
     border-radius: 16px;
-    width: 540px;
-    height: 675px;
+    /* width: 540px;
+    height: 675px; */
     
 }
 
